@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css" media="all">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/afterglow.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="slike/LKinov-logo.png" title="LKinov"></a></div>
+
+  <div class="top-menu">
+	<span class="menu"> </span> 
+		<nav class="cl-effect-1" id="cl-effect-1">
+		<ul>
+          <li><a href="pocetna.html" title="Početna">Početna</a></li>
+          <li><a href="onama.html" title="O nama">O nama</a></li>
+          <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+          <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li>
+          <li><a href="galerija.html" title="Galerija">Galerija</a></li>  	 
+    </ul>	
+                
+		</nav>			 
+
+			 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+     <!-- script-for-menu -->
+</header>
+
+<main>
+
+    <section>
+        <div id="baner5" data-animation="fadeInDown"></div>
+        <h1 data-animation="fadeInUp">Kako se zaštititi na svoju ruku?</h1>
+    </section>
+
+    <article>
+      <div id="novosti">
+        <div class="novosti-sve">
+          <div class="novosti-tekst">Što svatko od nas može učiniti ne bi li maksimalno poboljšao svoj stupanj zaštite od ”cyber” napada? Postoji nekoliko stvari. 
+            Prva je najjednostavnija, a ogleda se u tome da korisnik pazi na to na što će kliknuti i što će otvoriti. Prije nego što se neka internetska stranica 
+            otvori ili datoteka raspakira treba dobro provjeriti u vjerodostojnost sadržaja s tih mjesta.<br><br>
+            Drugi način je korištenja antivirusnih programa koji imaju mogućnost zaštite na mreži, odnosno "anty-cyber" zaštita. Ovo je vrlo dobar način zaštite,
+            ali nije uvijek siguran, te sam program može usporavati vaše računalo. To je razlog zašto antivirusnim programima popularnost pada kroz proteklih
+            nekoliko godina. Većini korsnika je dovoljna zaštita Windows Defendera. Ali ako smatrate da vam je potrebna veća zaštita, predplatite se na naš program!<br><br>
+            Treći način je držanje svojih tajni za sebe. Nema potrebe govoriti ikome svoje lozinke, pinove i druge osjetljive podatke. Nikada ne znate tko što namjerava,
+            ili kome će se izbrbljati te bi takva infromacija mogla procuriti i ostaviti vas u nepogodnoj i opasnoj situaciji.<br><br>
+            Također nije loše imati sigurnosnu kopiju ili "backup" svojih podataka kako bi, u slučaju gubitka imali iste podatke i mogli dalje postupati uz manje štete.
+            I naravno sve svoje sustave držite ažuriranima kako black-hat hakeri ne bi mogli iskoristiti ranjivosti zastarjelih sustava.<br><br>
+            Ali naravno, najbolja zaštita je ona na koju vi ne morate paziti. Zato možete sa sigurnošću nama povjeriti svoju zaštitu, rame uz rame sa 7000
+            drugih korisnika i ne morate brinuti dok god ste na internetu. Čuvajte se ili se pridružite nama! Od srca, LKinov team.</div>
+        </div>
+    </div>
+    </article>
+<center>
+<button onclick="history.back()">Nazad</button>
+</center>
+</main>
+
+<footer>
+  <h3>Copyright© Lovro Kopić 2023.<br>
+</footer>
+    
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <h1>Galerija</h1>
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html"><img src="slike/LKinov-logo.png" title="LKinov"></a></div>
+  
+    <div class="top-menu">
+    <span class="menu"> </span> 
+      <nav class="cl-effect-1" id="cl-effect-1">
+      <ul>
+            <li><a href="pocetna.html" title="Početna">Početna</a></li>
+            <li><a href="onama.html" title="O nama">O nama</a></li>
+            <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+            <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li>
+            <li><a href="galerija.html" title="Galerija">Galerija</a></li>  
+      </ul>	
+    
+      </nav>			 
+  
+         <!-- script-for-menu -->
+       <script>
+          $("span.menu").click(function(){
+            $(".top-menu ul").slideToggle("slow" , function(){
+            });
+          });
+       </script>
+       <!-- script-for-menu -->
+  </header>
+
+<div class="gallery">
+  <a target="_blank" href="slike/LKinov-logo.png">
+    <img src="slike/LKinov-logo.png" alt="Logo" width="600" height="600">
+  </a>
+  <div class="desc">Logo naše firme.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/galerija1.jpg">
+    <img src="slike/galerija1.jpg" alt="Zgrada" width="600" height="400">
+  </a>
+  <div class="desc">Naša nova poslovnica.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/galerija2">
+    <img src="slike/galerija2.jpg" alt="Poslovni prostor" width="600" height="400">
+  </a>
+  <div class="desc">Naš poslovni prostor</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/pocetna1.jpg">
+    <img src="slike/pocetna1.jpg" alt="Altposlovni" width="700" height="400">
+  </a>
+  <div class="desc">Druga radna dvorana.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/novost3a.jpg">
+    <img src="slike/novost3a.jpg" alt="Novost 3" width="700" height="400">
+  </a>
+  <div class="desc">Slika za novost 3.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/novost3.jpg">
+    <img src="slike/novost3.jpg" alt="Novost3 banner" width="1000" height="400">
+  </a>
+  <div class="desc">Banner za novost 3.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/novost4.jpg">
+    <img src="slike/novost4.jpg" alt="Novost 4" width="600" height="400">
+  </a>
+  <div class="desc">Slika za novost 4.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/novost5.jpg">
+    <img src="slike/novost5.jpg" alt="Novost 5" width="600" height="400">
+  </a>
+  <div class="desc">Slika za novost 5.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/novost2a.jpg">
+    <img src="slike/novost2a.jpg" alt="Novost 2a" width="600" height="500">
+  </a>
+  <div class="desc">Thumbnail za novost 2.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="slike/vpn.jpg">
+    <img src="slike/vpn.jpg" alt="VPN" width="600" height="600">
+  </a>
+  <div class="desc">Logo za naš VPN.</div>
+</div>
+
+<footer>
+  <h3>Copyright© Lovro Kopić 2023.<br>
+</footer>
+
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+</body>
+</html> 

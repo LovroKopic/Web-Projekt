@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/afterglow.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><a href="index.html"><img src="slike/LKinov-logo.png" title="LKinov"></a></div>
+  
+    <div class="top-menu">
+    <span class="menu"> </span> 
+      <nav class="cl-effect-1" id="cl-effect-1">
+      <ul>
+            <li><a href="pocetna.html" title="Početna">Početna</a></li>
+            <li><a href="onama.html" title="O nama">O nama</a></li>
+            <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+            <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li>
+            <li><a href="galerija.html" title="Galerija">Galerija</a></li>  
+      </ul>	
+    
+      </nav>			 
+  
+         <!-- script-for-menu -->
+       <script>
+          $("span.menu").click(function(){
+            $(".top-menu ul").slideToggle("slow" , function(){
+            });
+          });
+       </script>
+       <!-- script-for-menu -->
+  </header>
+
+<main>
+
+    <section>
+        <div id="baner1" data-animation="fadeInDown"><div class="baner-txt" data-animation="fadeInDown">Dobrodošli!</div></div>
+        <h1 data-animation="fadeInUp">LKinov vam čuva leđa!</h1>
+    </section>
+
+    <article>
+      <div id="novosti">
+        <div class="novosti-sve">
+          <div class="novosti-tekst">Vaš osobni čuvar svih osjetljivih podataka, lozinki, pinova, verifikacija i ostalog je tu!<br><br>
+             Statistika pokazuje da u proteklih desetak godina stopa raznih internetskih prijevara, krađe podataka i identiteta, raste eksponencijalno.
+             Ovo je naravno rezultat razvoja tehnologije i velikog softverskog razvoja koji omogućuje pojedinim ljudima da iskorištavaju ranjivosti sustava vrlo
+             efikasno što rezultira velikom novčanom i drugom štetom njihovim žrtvama.<br><br>Naravno, ne želite da se isto vama dogodi? Zato smo ovdje mi! Nama možete
+             povjeriti sve svoje podatke, lozinke i ostale osjetljive informacije gdje će biti vrlo složeno i dinamično enkriptirani da nemate brige u digitalnom svijetu
+             dok god ste s nama. Pružamo i druge opcije zaštite, sve se dogovara uživo s vašim osobnim čuvarom!<br><br>Kako naša zaštita funkcionira?<br>
+             Naime mi surađujemo s većinom firmi i domena gdje bi mogli koristiti digitalne usluge i moći ćete se jednostavno autentificirati s našim unikatnim
+             tokenom koji ćete dobiti kod nas. U slučaju da zaboravite svoj token, ostaje vam još jedna metoda verifikacije koja nije ništa manje sigurna od prve.
+             <br><br>Također je bitno napomenuti da uz naš plan dobivate pristup brojnim mnogim pogodnostima kao što je naš iznimno napredan antivirusni program, VPN, 
+             trezor lozinki i ostatak ostaje iznenađenje! Opis planova i paketa možete vidjeti niže, a za još informacija pitajte nas i uživo u našoj sjednici. Pridružite nam se već danas! </div>
+          <div class="novosti-sl">
+            <div class="novosti-sl-li"><a href="slike/galerija1.jpg" data-fancybox="galerija" data-caption="Zgrada"><img src="slike/pocetna1.jpg" alt="Zgrada"></a></div>
+            <div class="novosti-sl-de"><a href="slike/galerija2.jpg" data-fancybox="galerija" data-caption="Radni prostor"><img src="slike/LKinov-logo.png" alt="Logo"></a></div>
+          </div>
+        </div>
+    </div>
+    </article>
+  <section>
+    <div class="tablice">
+      <div class="box">
+        <div class="box-naslov">Standardni paket [10 eura/mjesec]</div>
+        <div class="box-tekst">-Potpuna zaštita podataka.<br>-Unikatni LKinov token-</div>
+      </div>
+      <div class="box">
+        <div class="box-naslov">Napredni paket [20 eura/mjesec]</div>
+        <div class="box-tekst">-Potpuna zaštita.<br>-Unikatni LKinov token.<br>Pristup antivirusnom programu i VPN-u.</div>
+      </div>
+      <div class="box">
+        <div class="box-naslov">Premium paket [35 eura/mjesec]</div>
+        <div class="box-tekst">-Potpuna zaštita podataka.<br>-Unikatan LKinov token.<br>-Pristup antivirusnom programu i VPN-u.<br>-Pristup svim ostalim pogodnostima(trezor, bonus paketi i pokloni).</div>
+      </div>
+    </div>
+  </section>
+<center>
+<button onclick="history.back()">Nazad</button>
+</center>
+</main>
+
+<footer>
+  <h3>Copyright© Lovro Kopić 2023.<br>
+  <a href="https://github.com/LovroKopic/Web-Projekt/tree/main" class="fa fa-github"></a>
+</footer>
+
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+
+</body>
+</html>

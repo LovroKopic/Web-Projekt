@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css" media="all">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/afterglow.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="slike/LKinov-logo.png" title="LKinov"></a></div>
+
+  <div class="top-menu">
+	<span class="menu"> </span> 
+		<nav class="cl-effect-1" id="cl-effect-1">
+		<ul>
+          <li><a href="pocetna.html" title="Početna">Početna</a></li>
+          <li><a href="onama.html" title="O nama">O nama</a></li>
+          <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+          <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li>
+          <li><a href="galerija.html" title="Galerija">Galerija</a></li>  	 
+    </ul>	
+                
+		</nav>			 
+
+			 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+     <!-- script-for-menu -->
+</header>
+
+<main>
+
+    <section>
+        <div id="baner3" data-animation="fadeInDown"></div>
+        <h1 data-animation="fadeInUp">Dan otvorenih vrata 10.3.2024.</h1>
+    </section>
+
+    <article>
+      <div id="novosti">
+        <div class="novosti-sve">
+          <div class="novosti-tekst">Srdačno vas pozivamo na dan otvorenih vrata koji će se održati 10. ožujka u prostorima naše sjednice u Zagrebu.<br><br>
+            Kao što znate, uvijek nastojimo dovesti više ljudi u sigrunost našeg sustava, zato ćemo održati dan otvorenih vrata gdje ćete moći pogledati i doživjeti
+            dio naše strasti za ovaj posao, i naravno naučiti kako se sve ovdje odvija. Bit će organiziran i ručak za sve posjetitelje, tako da gledajte da nam se i tu pridružite!<br><br>
+            Raspored događaja je slijedeći:<br><br>-U 10:00 ujutro započinje događaj, posjetitelji će moći posjetiti i razgledati naše prostorije.<br>
+            -U 11:30 osnivatelj firme, Lovro Kopić, održat će predavanje na temu osnutka naše firme, njenog cilja, te budućnosti. Kao i o važnosti cyber security-a.<br>
+            -U 13:00 moći ćete postaviti pitanja našem timu. Sve što bi vas moglo zanimati o nama, o mogućim karijerama možete saznati tada!<br>
+            -U 14:00 će biti organiziran ručak gdje možete utažiti glad i žeđ i zadovoljno nastaviti svoj dan, uz mnoge korisne informacije o sigurnosti na internetu!<br><br>
+            Hvala vam na povjerenju i vidimo se tamo! LKinov team. </div>
+        </div>
+    </div>
+    </article>
+<center>
+<button onclick="history.back()">Nazad</button>
+</center>
+</main>
+
+<footer>
+  <h3>Copyright© Lovro Kopić 2023.<br>
+</footer>
+    
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+
+</body>
+</html>

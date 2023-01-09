@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="slike/LKinov-logo.png" title="LKinov"></a></div>
+
+  <div class="top-menu">
+	<span class="menu"> </span> 
+		<nav class="cl-effect-1" id="cl-effect-1">
+		<ul>
+          <li><a href="pocetna.html" title="Početna">Početna</a></li>
+          <li><a href="onama.html" title="O nama">O nama</a></li>
+          <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+          <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li>
+          <li><a href="galerija.html" title="Galerija">Galerija</a></li>  	 
+
+    </ul>	
+                
+		</nav>			 
+
+			 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+     <!-- script-for-menu -->
+</header>
+
+<main>
+  <section>
+    <div id="baner1" data-animation="fadeInDown"><img src="slike/LKinov-logo.png" alt="LKinov" class="center"></div>
+    <h1 data-animation="fadeInUp">O nama</h1>
+  </section>
+
+  <article>
+	  <!-- vrijednosti -->
+	  <div id="vrijednosti" >
+      <h2>Naš cilj</h2>
+      <div class="tekst" data-animation="fadeInUp">Svaki čovjek zaslužuje slobodu i sigurnost, dok ih svojim djelovanjem ne odbaci, to je ono u što mi vjerujemo i zato nudimo iste vrijednosti u naprednom obliku onima koji je zatraže.  </div>
+      <div class="tekst1" data-animation="fadeInUp">U današnje vrijeme nikome nije garantirana sigurnost na internetu, ali predavajući kontrolu u ruke onima kojima vjerujete možete smanjiti svoj rizik od gubitka najvrijednijih podataka.</div>
+    </div>
+  </article>
+
+  <section>
+    <div class="tablice">
+      <div class="box">
+        <div class="box-naslov">Što točno nudimo?</div>
+        <div class="box-tekst">LKinov nudi potpunu zaštitu svih stvari i podataka koje stupaju na lokalnu i svjetsku mrežu, odnosno, internet. Odabirujući jedan od naših planova,
+            osiguravate svoj boravak ili boravak svoje firme na mreži. Tako je, LKinov ne pruža zaštitu samo firmama s bitnim podacima koji bi, curenjem u krive ruke, mogli
+            nanijeti velike novčane štete, nego i svakodnevnim ljudima koji žele učiniti pravu stvar i zaštiti svoju aktivnost na mreži. Zbilja nitko nije spašen od rizika, zato
+            je nužni brinuti o svojim podacima kao i o svom zdravlju.</div>
+      </div>
+      <div class="box">
+        <div class="box-naslov">Zašto?</div>
+        <div class="box-tekst">Kao što je već rečeno, od opasnosti na internetu nitko nije siguran. Statistički gledano, cyber-napadi, krađa identiteta, svevrsne prijevare u proteklih
+            deset godina, rastu eksponencijalno. Većina ljudi razmišlja na način "neće valjda mene", čega se vrlo opasno držati u današnje doba. Ako je vaše nastrojenje slično,
+            ne biste vjerovali koliko se prijevara i krađa podataka događa svaki dan. Ljudi koji čine ovakve zločine apsolutno ne mare tko ste i dali zaslužujete ovakvo nešto.
+            zato spriječite mogućnost ovakvih zločina barem za sebe i nastavite svoj život bez brige!</div>
+      </div>
+      <div class="box">
+        <div class="box-naslov">Povjerenje</div>
+        <div class="box-tekst">Dakle, bitno pitanje koje se morate zapitati kada nekome predajete svoje podatke u svrhu zaštite jest "mogu li im vjerovati?" Na sreću, odgovor
+          na to pitanje pri našim rukama je - Naravno! Naš tim je sastavljen od ljudi s čistim dosjeom, visoko etičnih pojedinaca koji su spremni direktno odgovarati u slučaju
+          bilo kakvih komplikacija do kojih vam obećajemo da neće doći. Štoviše, svog osobnog "čuvara" možete upoznati u našoj sjednici u Zagrebu! </div>
+      </div>
+    </div>
+  </section>
+<center>
+<video width="480" height="540" controls>
+  <source src="video/cybersec.mp4" type="video/mp4">
+</center>
+</main>
+
+<footer>
+  <h3>Copyright© Lovro Kopić 2023.<br>
+</footer>
+    
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+
+</body>
+</html>

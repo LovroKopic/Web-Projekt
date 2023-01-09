@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css" media="all">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/afterglow.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="slike/LKinov-logo.png" title="LKinov"></a></div>
+
+  <div class="top-menu">
+	<span class="menu"> </span> 
+		<nav class="cl-effect-1" id="cl-effect-1">
+		<ul>
+          <li><a href="pocetna.html" title="Početna">Početna</a></li>
+          <li><a href="onama.html" title="O nama">O nama</a></li>
+          <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+          <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li>
+          <li><a href="galerija.html" title="Galerija">Galerija</a></li>  	 
+    </ul>	
+                
+		</nav>			 
+
+			 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+     <!-- script-for-menu -->
+</header>
+
+<main>
+
+    <section>
+        <div id="baner4" data-animation="fadeInDown"></div>
+        <h1 data-animation="fadeInUp">Što su cyber napadi? Upoznajte prijetnju.</h1>
+    </section>
+
+    <article>
+      <div id="novosti">
+        <div class="novosti-sve">
+          <div class="novosti-tekst">”Cyber” napadi mogu se pojaviti na više različitih načina. Od kompromitiranja osobnih informacija i podataka pa do preuzimanja 
+            kontrole nad računalom pritom zahtijevajući otkupninu koja se obično treba platiti u obliku kriptovalute nakon čega će nelegalni oblik kontrole nad tuđim 
+            računalom prestati samo su neki od načina kako se ”cyber” napadi mogu izraziti i obaviti.<br><br>Jedan od razloga zbog kojeg se ovakva vrsta napada toliko brzo proširuje 
+            jest taj što ih se vrlo često teško može uočiti sve dok nije prekasno. Ali kako se oni zapravo dogode saznajmo u nastavku.<br><br>
+            Razumijevanje ”cyber” prijetnji i onoga kako se ”cyber” napadi odvijaju samo je jedan dio informacija koje će vam zatrebati ukoliko se želite zaštititi. 
+            No osim toga bilo bi dobro razumjeti i to kako do samih ”cyber” napada dolazi. Većina napada su ustvari kombinacija semantičkih taktika koje se koriste i primjenjuju na sintaktičan način. 
+            Jednostavnije rečeno, radi se o pokušajima da se izmijene svojstva računala ili kako će se računalo ponašati preko nekih od nedopuštenih radnji koje se odvijaju preko interneta, 
+            odnosno sve dok je korisnik  spojen na internet.<br><br>
+            Na primjer, jedan od takvih primjera napada su takozvani ”phishing” e-mailovi. Ovdje se koriste i način komunikacije (kao što je elektronička pošta) u kombinaciji sa određenom vrstom
+            softvera koji se onda koriste za ”cyber” napad (kao što je recimo virus, crv ili nešto treće). <br><br>Sam napad se odvija na način da se korisnika prevari. Korisnik pomisli da na svoje računalo sprema 
+            ili skida određene vrste informacija dok se zapravo događa to da raznorazni black-hat hakeri zloupotrijebljavaju korisnikove informacije i izvlače ih iz računala. Svaka takva ili slična radnja koja za 
+            glavni cilj ima izvlačenje korisnikovih informacija i njihovu zloupotrebu naziva se ”cyber” napadom.</div>
+        </div>
+    </div>
+    </article>
+<center>
+<button onclick="history.back()">Nazad</button>
+</center>
+</main>
+
+<footer>
+  <h3>Copyright© Lovro Kopić 2023.<br>
+</footer>
+    
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projektni zadatak</title>
+
+<!-- Favicons -->
+<link rel="icon" type="slike/png" href="slike/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="slike/png" href="slike/favicon-16x16.png" sizes="16x16" />
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/izbornik.css" media="all">
+<link rel="stylesheet" href="css/animate.css" media="all">
+<link rel="stylesheet" href="css/jquery.fancybox.css" media="all">
+<link rel="stylesheet" href="css/responsive.css" media="screen">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/afterglow.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="slike/LKinov-logo.png" title="LKinov"></a></div>
+
+  <div class="top-menu">
+	<span class="menu"> </span> 
+		<nav class="cl-effect-1" id="cl-effect-1">
+		<ul>
+          <li><a href="pocetna.html" title="Početna">Početna</a></li>
+          <li><a href="onama.html" title="O nama">O nama</a></li>
+          <li><a href="novosti.html" title="Novosti">Novosti</a></li>
+          <li><a data-fancybox data-type="iframe" data-src="kontakt.html" href="javascript:;">Kontakt</a></li>
+          <li><a href="galerija.html" title="Galerija">Galerija</a></li>  	 
+    </ul>	
+                
+		</nav>			 
+
+			 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+     <!-- script-for-menu -->
+</header>
+
+<main>
+
+    <section>
+        <div id="baner2" data-animation="fadeInDown"><div class="baner-txt" data-animation="fadeInDown">Novi uspjesi za sigurnost krda!</div></div>
+        <h1 data-animation="fadeInUp">Službeno 10 000 korisnika!</h1>
+    </section>
+
+    <article>
+      <div id="novosti">
+        <div class="novosti-sve">
+          <div class="novosti-tekst">S velikom radošću se možemo pohvaliti da nam vjeruje 10 000 korisnika! Ovo je veliko dostignuće za nas ali i za sve one koji nam vjeruju jer zajedno 
+            činimo internet sigurnijim mjestom.<br><br> Kada smo započeli poslovanje u lipnju 2021. godine nismo ni sanjali da ćemo u ovakvom, relativno kratkom roku, zadobiti povjerenje
+            ovakvog broja ljudi. Iznimna nam je čast sa svima vama dijeliti naš san o sigurnosti i slobodi. Vi i jeste razlog zašto je ovo moguće i živi ste dokaz Hrvatskog slobodnog duha!
+            <br><br>Iz tog razloga vam ovim putem od srca zahvaljujemo i pozivamo da nastavimo surađivati i privući još mnogo korisnika u naš trezor. Također vas pozivamo na proslavu koja će
+            se održati 30.lipnja, kako bi uveličali ovaj uspjeh. No vjerujemo da je također dug put ispred nas i nadamo se da će nas pratiti ovakva sreća, energija i vaše povjerenje i dalje.
+            <br><br>Još jednom od srca zahvaljujemo na povjerenju od cjelog tima LKinov-a! </div>
+        </div>
+    </div>
+    </article>
+<center>
+<button onclick="history.back()">Nazad</button>
+</center>
+</main>
+
+<footer>
+  <h3>Copyright© Lovro Kopić 2023.<br>
+</footer>
+    
+  <!-- start-smoth-scrolling -->
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){		
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+</script>
+
+<script src="js/jquery.scrollAnimations.min.js"></script>
+<script>
+    (function(){
+        var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+        $containers.scrollAnimations();
+    }());
+</script>
+
+</body>
+</html>
